@@ -5,23 +5,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 html{
-	background: url('image.jpg') no-repeat center center fixed;
+	background: url('images/image.jpg') no-repeat center center fixed;
    -webkit-background-size:cover;
    -moz-background-size:cover;
    -o-background-size:cover;
    background-size:cover;
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  
 
 }
-body {
-  margin: 1;
-  font-family: Arial, Helvetica, san-serif;
-  align-content: center;
-   
-}
+
 .topnav {
   overflow: visible;
   background-color: #333;
-
+  position: relative;
   
 }
 
@@ -50,19 +47,41 @@ body {
 .topnavright {
 	float:right;
 }
-.cardview{
-    background-color: white;
-	height: 300px;
-	width:500px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 5px solid white;
-     
-    margin-left:35px;
-
+.card {
+    
+    transition: 0.3s;
+    width: 256px;
+    height:400px;
+    border-radius: 5px;
+    color: white;
+    align-content: center;
+    float: right;
+    margin: 40px;
     
 }
 
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    color: #76ff03;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 16px;
+    
+}
+
+.card-deck{
+  overflow: hidden;
+  float: left;
+  align-items: center;
+  padding:20px;
+  padding-left: : 20px;
+  margin-right: : 200px;
+}
 </style>
 </head>
 <body >
@@ -73,12 +92,24 @@ body {
   <a href="#about">About</a>
  <div class="topnavright"> 
   <a href="#Sign Up">Sign up</a>
-  <a href="#Login">Login</a></div>
-
+  <a href="#Login">Login</a>
+ </div>
 </div>
-<div class="cardview">
-
+<div class="card-deck">
+ <div class="card">
+  <img src="images/faculty.png" alt="faculty" style="width:100%">
+  <div class="container">
+    <h4><b>Student Login</b></h4> 
+    <p>Students can able to know their Time Tables.</p> 
+  </div>
+ </div>
+ <div class="card">
+  <img src="images/student.png" alt="student" style="width:100%;height: 285px">
+  <div class="container">
+    <h4><b>Faculty/Teacher Login</b></h4> 
+    <p>Facuty/Teacher can able to view thier Time Tables. </p> 
+  </div>
+ </div>
 </div>
-
 </body>
 </html>
